@@ -314,12 +314,12 @@ template {
 * h4,
 * h5,
 * h6 {
-  text-align: left;
+  text-align: center;
+  color: Gold;
 }
 .container {
-  width: 80%;
-  background-color: lightblue;
-  border: 2px solid yellow;
+  width: 90%;
+  background-color: beige;
   margin: 0 auto;
   text-align: center;
   padding: 10px;
@@ -337,7 +337,6 @@ template {
   align-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 2px solid black;
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -353,7 +352,6 @@ template {
   }
 }
 .container .topofpage {
-  border: 2px solid black;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -361,8 +359,14 @@ template {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.container .unknown {
+  width: 100%;
+  margin-top: 35px;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 35px;
+}
 .container h1 {
-  border: 2px solid white;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -377,7 +381,6 @@ template {
   }
 }
 .container section p {
-  border: 2px solid red;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -385,6 +388,11 @@ template {
   align-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  text-align: left;
+  color: brown;
+}
+.container section p .top {
+  text-align: center;
 }
 .container section div {
   width: 40%;
@@ -400,10 +408,8 @@ template {
   text-align: center;
   padding: 10px;
   height: 100%;
-  border: 1px solid purple;
 }
 .container #bottomsection {
-  border: 1px solid maroon;
   display: flex;
   justify-content: space-around;
   align-items: center;

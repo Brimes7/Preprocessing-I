@@ -350,6 +350,9 @@
 
 // I am in the less file, but I am not in the CSS file
 
+@color: brown;
+@secondary-color: Gold;
+
 .flexbox(@a, @b, @c, @d, @e){
 	display: flex;
 	justify-content: @a;
@@ -368,12 +371,13 @@
 	.evenmargin;
 }
 * h1, * h2, * h3, * h4, * h5, * h6{
-	text-align: left;
+	text-align: center;
+	color: @secondary-color;
 }
 .container{
-	width: 80%;
-	background-color: lightblue;
-	border: 2px solid yellow;
+	width: 90%;
+	background-color: beige;
+	// border: 2px solid yellow;
 	.evenmargin;
 	header{
 		width: 100%;
@@ -381,7 +385,7 @@
 	}
 	nav{
 		.flexbox(space-around, center, center, row, wrap );
-		border: 2px solid black;
+		// border: 2px solid black;
 		width: 90%;
 		
 		.evenmargin;
@@ -394,12 +398,19 @@
 		}
 	}
 	.topofpage{
-		border: 2px solid black;
+		// border: 2px solid black;
 		.flexbox(space-around, center, center, row, wrap);
+	}
+	.unknown{
+		width: 100%;
+		margin-top: 35px;
+		vertical-align: middle;
+		text-align: center;
+		margin-bottom: 35px;
 	}
 
 	h1{
-		border: 2px solid white;
+		// border: 2px solid white;
 		width: 100%;
 		.evenmargin;
 		//Nested Media Querry
@@ -411,9 +422,15 @@
 		}
 	
 	section p{
-		border: 2px solid red;
+		// border: 2px solid red;
 		width: 80%;
 		.flexbox(center, center, center, row, wrap);
+		text-align: left;
+		color: @color;
+
+	.top{
+		text-align: center;
+	}
 	}
 	section div{
 		width: 40%;
@@ -423,11 +440,11 @@
 			.flexbox(space-around, center, center, row, wrap);
 			.evenmargin;
 			height: 100%;
-			border: 1px solid purple;
+			// border: 1px solid purple;
 
 	}
 	#bottomsection{
-		border: 1px solid maroon;
+		// border: 1px solid maroon;
 		.flexbox(space-around, center, center, row, wrap);
 	}
 }
